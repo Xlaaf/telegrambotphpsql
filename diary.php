@@ -220,15 +220,15 @@ function processMessage($message)
           break;
 
         case '/help':
-          $text = '💁🏼 Aku adalah *diary bot* ver.`'.myVERSI."`\n";
-          $text .= "🎓 Oleh _Hasanudin HS_\n⌛️".lastUPDATE."\n\n";
-          $text .= "💌 Berikut menu yang tersedia spesial buat kamu, iya kamu..\n\n";
+          $text = '💁🏼 Aku adalah Gipsker ver.`'.myVERSI."`\n";
+          $text .= "🎓 Oleh _xlaaf_\n⌛️".lastUPDATE."\n\n";
+          $text .= "😍 Berikut menu yang tersedia spesial buat kamu, iya kamu..\n\n";
           $text .= "➕ /tambah `[pesan]` untuk menambah catatan\n";
           $text .= "🔃 /list melihat daftar catatan tersedia\n";
           $text .= "🔍 /cari mencari catatan\n";
           $text .= "⌛️ /time info waktu sekarang\n";
           $text .= "🆘 /help info bantuan ini\n\n";
-          $text .= '😎 *Ingin diskusi?* Silakan bergabung ke @botphp';
+          $text .= '😁 Terimakasih Kepada Bang Ihsan Sudah Membuatkan Script ini!';
           break;
 
         case '/time':
@@ -240,7 +240,7 @@ function processMessage($message)
           if (isset($pecah[1])) {
               $pesanproses = $pecah[1];
               $r = diarytambah($iduser, $pesanproses);
-              $text = '😘 Goresan catatan indahmu telah berhasil kusematkan di dalam hatiku!';
+              $text = '🤓 catatanmu sudah kusimpam';
           } else {
               $text = '⛔️ *ERROR:* _Pesan yang ditambahkan tidak boleh kosong!_';
               $text .= "\n\nContoh: `/pesan besok aku sahur mau puasa sunnah`";
@@ -284,7 +284,7 @@ function processMessage($message)
           break;
 
         default:
-          $text = '😥 _aku tidak mengerti apa maksudmu, namun tetap akan kudengarkan sepenuh hatiku.._';
+          $text = '😥 _aku tidak mengerti apa maksudmu.._';
           break;
       }
         } else {
